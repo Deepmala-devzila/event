@@ -109,7 +109,7 @@ curl -X PUT \
 
 ### API Endpoint:
 ```
-PUT /v1/events/<event-id>
+PUT /v1/events/<event-id>/status
 ```
 
 ### Parameters
@@ -121,7 +121,7 @@ PUT /v1/events/<event-id>
 
 ```shell
 curl -X PUT \
-  http://localhost:3000/v1/events/1 \
+  http://localhost:3000/v1/events/1/status \
   -H 'auth_token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOiIyMDE3LTA2LTE0IDA2OjU0OjM0IFVUQyJ9.M7pgzA4ktNVvuDFvKMqESJfHmLQCobp0WNjC6k2Kjac' \
   -H 'cache-control: no-cache' \
   -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
